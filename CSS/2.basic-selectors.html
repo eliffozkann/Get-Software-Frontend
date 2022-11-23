@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- font awasome icon larının kullanılabilmesi için bu link in eklenmesi ZORUNLU!!!! -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+      }
+
+      /* h1,p{
+            color: red;
+        } */
+
+      #logo {
+        /* hastag id ye göre stil verir */
+        color: brown;
+      }
+
+      .info {
+        /* . ile başlayanalr ise class larında info olanlara stil verir*/
+        color: blue;
+        background: lightgray;
+      }
+
+      #para1.lead {
+        background-color: bisque;
+        color: teal;
+      }
+
+      ul li a {
+        text-decoration: none; /* bağlantı satırlarının altındaki çizgiyi kaldırdı */
+      }
+
+      .info span {
+        color: red;
+      }
+
+      .info .primary {
+        color: darkgreen;
+      }
+
+      * {
+        /* yıldız sayfanın tüm elemanlarında değişiklik */
+        font-size: 30px;
+      }
+
+      * {
+        /* kendi içinde padinler ve margin ler için tüm sayfanın padding ve marginleri sıfırlandı AMA BEN ŞİMDİ BİRAZ MARGİN VERECEM sayfanın kenarlarına*/
+        padding: 0%;
+        margin: 20px;
+      }
+
+      a:visited {
+        /* linklerin üstüne TIKLANDIKTAN SONRA renk değişikliği için */
+        color: deeppink;
+      }
+
+      a:hover {
+        /* linklerin üstüne basmadan gelindiğinde renk değişikliği için */
+        color: red;
+      }
+
+      input {
+        font-size: 1.5em;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid springgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-regular fa-star"></i>
+      <h1>Header 1</h1>
+      <h1 id="logo">Logo</h1>
+      <ul>
+        <li>
+          <a href="#">Contact (tıklayınız)</a>
+        </li>
+        <li><a href="#">Services (tıklayınız)</a></li>
+      </ul>
+    </header>
+    <h1>Header 2</h1>
+    <p id="para1" class="lead info">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi,
+      incidunt!
+    </p>
+    <p class="info">
+      Lorem ipsum <span class="primary">dolor</span>, sit amet consectetur
+      adipisicing elit. Excepturi, incidunt!
+    </p>
+    <p class="info">
+      Lorem ipsum <span>dolor</span>, sit amet consectetur adipisicing elit.
+      Excepturi, incidunt!
+    </p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+    <br /><br />
+
+    *****************************************************************
+    <input type="text" placeholder="Name" />
+  </body>
+</html>
